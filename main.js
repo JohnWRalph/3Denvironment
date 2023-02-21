@@ -17,7 +17,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 camera.position.setZ(30);
 
 renderer.render(scene, camera)
-const cantoTexture = new THREE.TextureLoader().load('greencanto1.png')
+const cantoTexture = new THREE.TextureLoader().load('https://arweave.net/CD56U1-hKJ2TqV5ECVHyLPVxQbWcsf0KkIS5SJqq_B0')
 const geometry = new THREE.CylinderGeometry(10, 10, 2, 100);
 const material = new THREE.MeshStandardMaterial({ map: cantoTexture });
 const torus = new THREE.Mesh(geometry, material);
@@ -59,7 +59,7 @@ function addStar() {
 
 Array(200).fill().forEach(addStar)
 
-const spaceTexture = new THREE.TextureLoader().load('space.jpg')
+const spaceTexture = new THREE.TextureLoader().load('https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__480.jpg')
 scene.background = spaceTexture;
 
 function animate() {
@@ -74,7 +74,7 @@ function animate() {
   renderer.render(scene, camera);
 }
 
-const ngmiTexture = new THREE.TextureLoader().load('nealo11.jpg');
+const ngmiTexture = new THREE.TextureLoader().load('https://api.phantom.app/image-proxy/?image=https%3A%2F%2Fwww.arweave.net%2FMKBhn32i_8UNnF_Mwgr2MefWBiYocUW6oapsJuH9Bt4%3Fext%3Dpng');
 
 
 const pandaBox = new THREE.Mesh(
@@ -84,7 +84,7 @@ const pandaBox = new THREE.Mesh(
 
 scene.add(pandaBox)
 
-const moonTexture = new THREE.TextureLoader().load('Moon_texture.jpg')
+const moonTexture = new THREE.TextureLoader().load('https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Moon_texture.jpg/2560px-Moon_texture.jpg')
 const normalTexture = new THREE.TextureLoader().load('normal.jpg')
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
